@@ -2,7 +2,7 @@
 angular.module('HDHome')
     .factory('HDHomeService', ['$http', '$cookieStore', '$rootScope','$window', function ($http, $cookieStore, $rootScope,$window) {
         console.log('global cookie: '+$cookieStore.get('globals'));
-        $rootScope.hdeskIp="http://localhost:4000";
+        $rootScope.hdeskIp="http://52.39.103.19:4000";
         var service={};
         var config={};
 

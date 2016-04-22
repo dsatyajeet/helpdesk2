@@ -9,7 +9,7 @@ angular.module('HDGoogleAuth',['ngRoute', 'ngCookies'])
     ['$scope', '$rootScope', '$location', '$window','$cookieStore','$http','HDTokenService',
         function ($scope, $rootScope, $location, $window,$cookieStore,$http, HDTokenService) {
             // reset login status
-            $rootScope.hdeskIp="http://localhost:4000";
+            $rootScope.hdeskIp="http://52.39.103.19:4000";
             console.log('in ng controller..##'+$location.url());
             var query=$location.absUrl().split('?')[1];
             console.log('THE QUERY: '+query);
