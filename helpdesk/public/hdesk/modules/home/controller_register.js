@@ -11,7 +11,7 @@ angular.module('HDRegistration',['ngRoute', 'ngCookies'])
     ['$scope', '$rootScope', '$location', '$window','$cookieStore','$http','RegisterService',
         function ($scope, $rootScope, $location, $window,$cookieStore,$http, RegisterService) {
             // reset login status
-            $rootScope.hdeskIp="http://localhost:4000";
+            $rootScope.hdeskIp="http://52.39.103.19:4000";
 $scope.register_flag=false;
             $scope.resData={};
             if ($rootScope.globals && $rootScope.globals.currentUser) {

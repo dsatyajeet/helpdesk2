@@ -7,7 +7,7 @@ angular.module('HDAuthentication',['ngRoute', 'ngCookies'])
     function ($scope, $rootScope, $location, $window,$cookieStore,$http, HDAuthenticationService) {
         // reset login status
         console.log('in ng controller..##');
-        $rootScope.hdeskIp="http://localhost:4000";
+        $rootScope.hdeskIp="http://52.39.103.19:4000";
         $rootScope.globals = $cookieStore.get('globals') || {};
         if ($rootScope.globals.currentUser) {
             $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.globals.currentUser.authdata; // jshint ignore:line
